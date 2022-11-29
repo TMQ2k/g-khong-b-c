@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello !!</title>
+</head>
+<body>
+    <p id="hieu_ung_danh_chu"></p>
+    <p></p>
+    <br>
+
+</body>
+
+<script>
+
+  password = 0
+      
+  window.onload=function love_page(){
+  var password = window.prompt("Nhập mật khẩu đi bé iu :)))) (Hint: Ngày t chui được vào tim m :)) format: ddmmyyyy ","");
+  let love_text = 'Ờm ! cái này bảo làm cho m lâu lắm r nhưng mà giờ mới làm được :))). Thực ra không biết làm sao cho nó có chất riêng nên làm phần này cho có chất riêng thoiii =)) !!! Anywayy , iuuuu mmm nhìu <33333';
+  let tocDo = 70;
+
+  console.log(password)
+  if( String(password) == '06112022')
+  {
+      document.getElementById('love_text')
+      
+      let i = 0;
+
+typeWriter()
+function typeWriter() {
+if (i < love_text.length) {
+document.getElementById("hieu_ung_danh_chu").innerHTML += love_text.charAt(i);
+i++;
+setTimeout(typeWriter, tocDo );
+  }
+else if( i >= love_text.length){
+var div = document.createElement("div")
+  var button = document.createElement("button");
+button.innerHTML = "Bấm vào đây đi eiu :))) ";
+button.onclick = function() {
+  window.location.replace("heart_page.html");
+};
+div.appendChild(button)
+document.body.appendChild(div)
+}
+}
+
+}
+
+
+  else
+  {
+      window.alert("Mày có nhớ gì thật không v ???? ");
+      window.location.reload()
+  }
+  
+}
+
+
+
+</script> 
+
+<style>
+body{
+  font-family: monospace;
+  font-size: 2em;
+  place-items: center;
+}
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+ body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: white;
+  }
+.btn5-hover {
+   width: 160px;
+   font-size: 16px;
+   font-weight: 600;
+   color: #fff;
+   cursor: pointer;
+   margin: 20px;
+   height: 55px;
+   text-align:center;
+   border: none;
+   background-size: 300% 100%;
+   border-radius: 50px;
+   moz-transition: all .4s ease-in-out;
+   -o-transition: all .4s ease-in-out;
+   -webkit-transition: all .4s ease-in-out;
+   transition: all .4s ease-in-out;
+ }
+.btn5-hover:hover {
+   background-position: 100% 0;
+   moz-transition: all .4s ease-in-out;
+   -o-transition: all .4s ease-in-out;
+   -webkit-transition: all .4s ease-in-out;
+   transition: all .4s ease-in-out;
+ }
+.btn5-hover:focus {
+   outline: none;
+ }
+.btn5-hover.btn5 {
+     background-image: linear-gradient(
+       to right,
+       #25aae1,
+       #4481eb,
+       #04befe,
+       #3f86ed
+     );
+     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+  button{
+    align-items: center;
+    
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 14px 21px;
+    font-size: 13px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+  }
+</style>
+</html>
